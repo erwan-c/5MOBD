@@ -26,13 +26,13 @@ npm install
 Dans les paramètres de votre projet Firebase, activez les services suivants :\
 Authentication : Activez l'authentification par e-mail / mot de passe.\
 Firestore Database : Créez une base de données Firestore.\
-Firebase Storage : Activez le stockage pour gérer des fichiers.\
+Firebase Storage : Activez le stockage pour gérer des fichiers.
 
 ### 4. Obtenez vos clés API Firebase
 
-Après avoir configuré Firebase, vous devrez récupérer vos clés API :\
+Après avoir configuré Firebase, vous devrez récupérer vos clés API :
 
-Allez dans les Paramètres du projet sur Firebase.\
+Allez dans les Paramètres du projet sur Firebase.
 
 Dans la section Vos applications, sélectionnez Web et copiez les informations suivantes :\
 API_KEY=\
@@ -40,7 +40,7 @@ AUTH_DOMAIN=\
 PROJECT_ID=\
 STORAGE_BUCKET=\
 MESSAGING_SENDER_ID=\
-APP_ID=\
+APP_ID=
 
 ### 5. Configurez votre fichier .env
 À la racine de votre projet, créez un fichier .env et collez-y les variables suivantes avec les valeurs que vous avez obtenues à l'étape précédente :\
@@ -49,7 +49,7 @@ AUTH_DOMAIN=<votre_auth_domain>\
 PROJECT_ID=<votre_project_id>\
 STORAGE_BUCKET=<votre_storage_bucket>\
 MESSAGING_SENDER_ID=<votre_messaging_sender_id>\
-APP_ID=<votre_app_id>\
+APP_ID=<votre_app_id>
 
 ### 6. Démarrez le projet
 
