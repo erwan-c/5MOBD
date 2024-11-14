@@ -34,13 +34,13 @@ Après avoir configuré Firebase, vous devrez récupérer vos clés API :
 
 Allez dans les Paramètres du projet sur Firebase.
 
-Dans la section Vos applications, sélectionnez Web et copiez les informations suivantes :\
-API_KEY=\
-AUTH_DOMAIN=\
-PROJECT_ID=\
-STORAGE_BUCKET=\
-MESSAGING_SENDER_ID=\
-APP_ID=
+Dans la section Paramètres Généraux -> Vos applications, sélectionnez Web puis configuration et copiez les informations suivantes :\
+apiKey\
+authDomain\
+projectId\
+storageBucket\
+messagingSenderId\
+appId
 
 ### 5. Configurez votre fichier .env
 À la racine de votre projet, créez un fichier .env et collez-y les variables suivantes avec les valeurs que vous avez obtenues à l'étape précédente :\
