@@ -68,6 +68,7 @@ const AddAddressScreen = () => {
         />
         <Text style={styles.label}>Description</Text>
         <TextInput
+          testID="descriptionInput"
           value={description}
           onChangeText={setDescription}
           multiline
@@ -76,10 +77,15 @@ const AddAddressScreen = () => {
         />
         <View style={styles.switchContainer}>
           <Text style={styles.switchLabel}>Rendre publique</Text>
-          <Switch value={isPublic} onValueChange={setIsPublic} />
+          <Switch
+            testID="isPublicSwitch"
+            value={isPublic}
+            onValueChange={setIsPublic}
+          />
         </View>
         <View style={styles.photoContainer}>
           <TouchableOpacity
+            testID="imagePickerButton"
             onPress={handleImagePick}
             style={styles.imagePicker}
           >
@@ -91,7 +97,11 @@ const AddAddressScreen = () => {
         {imageUri && (
           <Image source={{ uri: imageUri }} style={styles.imagePreview} />
         )}
-        <TouchableOpacity onPress={handleSubmit} style={styles.customButton}>
+        <TouchableOpacity
+          testID="submitButton"
+          onPress={handleSubmit}
+          style={styles.customButton}
+        >
           <Text style={styles.customButtonText}>Ajouter l'adresse</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -149,7 +159,7 @@ const styles = StyleSheet.create({
   photoContainer: {
     justifyContent: "center",
     alignItems: "center",
-    margin:20
+    margin: 20,
   },
   imagePicker: {
     flexDirection: "row",

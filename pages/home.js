@@ -19,6 +19,7 @@ import { doc, getDoc } from "firebase/firestore";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
+
   const [user, setUser] = useState(null);
   const [profileImage, setProfileImage] = useState(null);
   const [isModalVisible, setModalVisible] = useState(false);
@@ -127,7 +128,10 @@ const HomeScreen = () => {
         text: "Se déconnecter",
         onPress: () => {
           auth.signOut().then(() => {
-            navigation.navigate("Auth");
+            navigation.reset({
+              index: 0,
+              routes: [{ name: "Auth" }],
+            });
           });
         },
       },

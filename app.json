@@ -2,6 +2,7 @@
   "expo": {
     "name": "mes-bonnes-adresses",
     "slug": "mes-bonnes-adresses",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

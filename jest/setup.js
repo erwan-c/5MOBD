@@ -9,4 +9,6 @@ jest.mock('expo-image-picker', () => ({
   launchImageLibraryAsync: jest.fn(),
   launchCameraAsync: jest.fn(),
 }));
-
+jest.mock('@react-native-async-storage/async-storage', () => 
+  require('@react-native-async-storage/async-storage/jest/async-storage-mock')
+);

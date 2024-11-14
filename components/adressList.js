@@ -257,7 +257,6 @@ const AddressList = () => {
         />
       )}
 
-      {/* Modal pour afficher l'image en plein écran */}
       <Modal
         visible={!!selectedImage}
         transparent={true}
@@ -288,7 +287,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#f0f0f0",
     paddingTop: 10,
     paddingHorizontal: 20,
-    marginBottom: 260,
+    marginBottom: 300,
   },
   switchContainer: {
     flexDirection: "row",
